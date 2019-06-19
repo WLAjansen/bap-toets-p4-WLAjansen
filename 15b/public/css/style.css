@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: salmon;
+    padding: 20px 10px;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.bg-green {
+    background: #033e06;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sale-offer {
+    padding: 10px;
+    background: white;
+}
+
+.sale-offer--all {
+    padding: 10px;
+    background: #555;
+    color: #ffffff;
+}
+
+.sneakers {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.sneakers h2, .sneakers h3 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.sneakers h2 {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.sneakers h3 {
+    font-size: 0.875em;
+    margin-bottom: 1em;
+    font-weight: normal;
+}
+
+.sneakers .fluid-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sneakers article {
+    background-color: #555555;
+    padding: 10px;
+}
+
+.sneakers .price {
+    padding: 5px;
+    color: #fff;
+    background: red;
+}
+
+article p {
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75em;
+}
+
+figure {
+    background: #ffffff;
+    padding: 10px 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+figure .color {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px 5px;
+    border: 1px solid #cdcdcd;
+    color: #333333;
+    margin: 5px;
+    font-size: 0.75em;
+}
+
+.button {
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    grid-column: 1 / -1;
+}
+
+.button:hover {
+    background: #940000;
+}
+
+@media all and (min-width: 500px) {
+
+
+    .sneakers {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media all and (min-width: 767px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+
+    .sneakers {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 40px 20px;
+    }
+
+    .sneakers {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+}
